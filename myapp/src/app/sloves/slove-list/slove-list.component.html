@@ -1,0 +1,11 @@
+<div>
+  <h2>Slove List</h2>
+  <ul>
+    <li *ngFor="let slove of sloves">
+      {{ slove.name }}
+      <a [routerLink]="['/slove-edit', slove.id]">Edit</a>
+      <a [routerLink]="['/slove-delete', slove.id]">Delete</a>
+    </li>
+  </ul>
+  <a [routerLink]="['/slove-create']">Create New Slove</a>
+</div>
